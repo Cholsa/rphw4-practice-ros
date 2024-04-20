@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/ubuntu20-04/assignments/rphw4-practice-ROS/catkin_ws/devel/setup.sh
