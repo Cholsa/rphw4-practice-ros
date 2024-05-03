@@ -1,6 +1,26 @@
-# HomeWork 4 - Just practice some of ROS
+# HomeWork 4 - Just practice some of ROS with SMB robot (smb_common)
 
-## ROS architecture & philosophy
+Easy copy and past for my machine
+
+```
+cd assignments/rphw4-practice-ROS/catkin_ws 
+
+```
+
+```
+roslaunch smb_gazebo smb_gazebo.launch
+
+```
+
+```
+roslaunch smb_control control.launch
+
+```
+
+
+# Issues I faced along the way 
+
+## unzip files in WSL ubuntu
 
 But first, the instruction can be found in [Programming for Robotics - ROS
 ](https://rsl.ethz.ch/education-students/lectures/ros.html) session 1. 
@@ -12,37 +32,25 @@ This repo only contains the way I do this assignment, so all this is about how I
 After following the first instructio where I download the zip file and create workspace, I need to unzip the file in WSL Ubuntu 20.04, so I use:
 ```
 unzip smb_common.zip 
+
 ```
+
+## missing pluging
 
 When running catkin_make there is an error with a missing package called "hector-gazebo-plugins" which can be install with: 
 ```
 sudo apt-get install ros-noetic-hector-gazebo-plugins
+
 ```
 then catkin_make 
 
-## ROS master, nodes, and topics
-run roscore on different terminal tap
+Well, it appears that I have to watch the video to learn. 
 
-When trying to launch the package, I forgot that I need to specify the launch file 
+## missing plugin 2
+
+This time I need to set up velodyne_description
+
 ```
-roslaunch 
+sudo apt-get install ros-noetic-velodyne-description 
+
 ```
-
-| Left   | Center  | Right  |
-|:------:|:-------:|-------:|
-| L0     | **bold**| $1600  |
-| L1     | `code`  | $12    |
-| L2     | _italic_| $1     |
-
-
-
-## Console commands
-
-
-## Catkin workspace and build system
-
-
-## Launch-files
-
-
-## Gazebo simulator
